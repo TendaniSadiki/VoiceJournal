@@ -14,6 +14,7 @@ import { getAuth, PhoneAuthProvider, signInWithCredential } from 'firebase/auth'
 import { firebaseConfig } from '../config';
 
 
+<<<<<<< HEAD
 // Initialize Firebase JS SDK >=9.x.x
 // https://firebase.google.com/docs/web/setup
 /*try {
@@ -23,6 +24,9 @@ import { firebaseConfig } from '../config';
 } catch (err) {
   // ignore app already initialized error in snack
 }*/
+=======
+
+>>>>>>> f8422e454bd53865f84397e383fae7df0d7e3f99
 
 // Firebase references
 const app = getApp();
