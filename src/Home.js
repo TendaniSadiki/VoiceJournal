@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { Button, StyleSheet, Text, View } from 'react-native';
@@ -7,6 +8,16 @@ import { Audio } from 'expo-av';
 import * as Sharing from 'expo-sharing';
 
 
+=======
+
+
+import { StatusBar } from 'expo-status-bar';
+import React from 'react';
+import { Button, StyleSheet, Text, View } from 'react-native';
+import { Audio } from 'expo-av';
+import * as Sharing from 'expo-sharing';
+
+>>>>>>> b3aa7070856f93d0cc699a89c180a56c12b916ea
 export default function App() {
   const [recording, setRecording] = React.useState();
   const [recordings, setRecordings] = React.useState([]);
@@ -65,16 +76,22 @@ export default function App() {
           <Text style={styles.fill}>Recording {index + 1} - {recordingLine.duration}</Text>
           <Button style={styles.button} onPress={() => recordingLine.sound.replayAsync()} title="Play"></Button>
           <Button style={styles.button} onPress={() => Sharing.shareAsync(recordingLine.file)} title="Share"></Button>
+<<<<<<< HEAD
           <Button style={styles.button} onPress={() => deleteRecording(index)}title='Delete' color="red"></Button>
+=======
+>>>>>>> b3aa7070856f93d0cc699a89c180a56c12b916ea
         </View>
       );
     });
   }
+<<<<<<< HEAD
   const deleteRecording = (index) => {
     let updatedRecordings = [...recordings];
     updatedRecordings.splice(index, 1);
     setRecordings(updatedRecordings);
   }
+=======
+>>>>>>> b3aa7070856f93d0cc699a89c180a56c12b916ea
 
   return (
     <View style={styles.container}>
@@ -92,7 +109,11 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+<<<<<<< HEAD
     backgroundColor: '#f6F5F3',
+=======
+    backgroundColor: '#fff',
+>>>>>>> b3aa7070856f93d0cc699a89c180a56c12b916ea
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -110,4 +131,7 @@ const styles = StyleSheet.create({
   }
 });
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> b3aa7070856f93d0cc699a89c180a56c12b916ea
